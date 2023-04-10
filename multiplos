@@ -1,0 +1,39 @@
+
+
+import java.util.Scanner;
+
+public class App {
+    
+    public static boolean teste (int a, int b){
+
+        if(b%a==0){return true;}
+        return false;
+
+    }
+
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int a,b;
+        boolean retorno;
+
+        while (true){
+        System.out.println("Digite o primeiro numero");
+        a = in.nextInt();
+
+        System.out.println("Digite o segundo numero");
+        b = in.nextInt();
+
+        
+        retorno = teste(a,b); 
+
+        if (retorno){
+            System.out.println("são multiplos");
+        }else   System.out.println("não são multiplos");
+        
+        }
+    }
+}
+

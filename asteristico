@@ -1,0 +1,33 @@
+
+import java.util.Scanner;
+
+public class squareOfAsterisks  {
+    
+    public static void squareOAsterisks (int size){
+
+        int i,j;
+        for(i=0;i==size;i++){
+            System.out.println("*");
+            for(j=0;j==size;j++){
+                System.out.print("*");
+            }
+        }
+        return;
+
+    }
+
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int size;
+        
+        System.out.println("Digite o numero");
+        size = in.nextInt();
+
+        
+            System.out.println("");
+            squareOAsterisks(size);
+    }
+}

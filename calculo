@@ -1,0 +1,43 @@
+
+import java.util.Scanner;
+
+public class calcula {
+    
+    public static float calculaOperacao (float a, float b,char c){
+
+        if(c=='+'){return a+b;}
+        if(c=='-'){return a-b;}
+        if(c=='/'){return a/b;}
+        if(c=='*'){return a*b;}
+        System.out.println("Símbolo inválido");
+        return -1;
+
+    }
+
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        float a,b;
+        char c;
+
+        //while (true){
+        System.out.println("Digite o primeiro numero");
+        a = in.nextFloat();
+
+        System.out.println("Digite o segundo numero");
+        b = in.nextFloat();
+
+        System.out.println("Digite a operacao");
+        c = in.next().charAt(0);
+
+        
+        System.out.println("Resultado: " + calculaOperacao(a,b,c));
+        
+        //}
+    }
+}
+
+
+
