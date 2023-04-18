@@ -60,9 +60,6 @@ public class inverter {
         
         System.out.println("Digite a palavra: ");
         s1 = in.next();
-
-      //  System.out.println("Digite a segunda palavra: ");
-     //   s2 = in.next();
         
         System.out.println("palavra invertida: "+inverte(s1));
 
@@ -75,11 +72,6 @@ public class inverter {
         System.out.println("palavra invertida: "+inverte(s1,inicio,fim));
 
 
-//        int n,i;
-  //      System.out.println("Digite o numero de elementos do vetor: ");
-    //    n = in.nextInt();    
-            System.out.println("Digite a nota do trabalho: ");
-            trabalho = in.nextDouble();
         in.close();
 }
 }
