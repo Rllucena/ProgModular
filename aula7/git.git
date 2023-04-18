@@ -1,0 +1,10 @@
+$ git remote add origin https://github.com/Rllucena/ProgModular.git
+# Set a new remote
+
+$ git remote -v
+# Verify new remote
+> origin  https://github.com/Rllucena/ProgModular.git (fetch)
+> origin  https://github.com/Rllucena/ProgModular.git (push)
+
+git config --global user.email "rafael_l_lucena@hotmail.com"
+git config --global user.name "Rllucena"
