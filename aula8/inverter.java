@@ -77,17 +77,9 @@ public class inverter {
 
 //        int n,i;
   //      System.out.println("Digite o numero de elementos do vetor: ");
-    //    n = in.nextInt();
-        
-      //  char array[]=new char [n];
-
-//        for(i=0;i<n;i++){
-  //          System.out.println("Digite o valor do indice " + i+":");
-    //        array[i] = in.nextChar();
-      //   };
-        char[] array = {'c', 'a','s','a'};
-        inverte(array);
-
+    //    n = in.nextInt();    
+            System.out.println("Digite a nota do trabalho: ");
+            trabalho = in.nextDouble();
         in.close();
 }
 }
