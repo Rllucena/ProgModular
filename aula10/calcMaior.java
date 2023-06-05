@@ -18,8 +18,7 @@ public class calcMaior {
 
 
     public static void main(String[] args) {
-       Scanner in = new Scanner(System.in);
-
+       try (Scanner in = new Scanner(System.in)) {
         int i,n;
         
         System.out.println("Digite o numero de elementos do vetor: ");
@@ -42,5 +41,7 @@ public class calcMaior {
         System.out.println("maior dos elementos: " + calculaMaior(num));
 
         in.close();
+    } catch (Exception e){ System.out.println("ferrou "); }
+
     }
 }
