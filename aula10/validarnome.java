@@ -31,7 +31,7 @@ public class validarnome {
         String s1;
         
         System.out.println("Digite o nome do vivente: ");
-        s1 = in.next();
+        s1 = in.nextLine();
  
        try{
         validarNome(s1);
