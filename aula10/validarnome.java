@@ -1,16 +1,27 @@
 package aula10;
 
+import java.util.Scanner;
+
+class NomeInvalidoException extends Exception{}
+class StringVaziaException  extends Exception{}
+
 public class validarnome {
-    public static void validarNome(String nome) throws new NomeInvalidoException;{
-        for( int i=0; i<nome.lenght(); i++){
-            nome.Caracter.isLetter(i);
+    
+    public static void validarNome(String nome) throws NomeInvalidoException{
+        for( int i=0; i<nome.length(); i++){
+            if (!Character.isLetter(nome.charAt(i))&&!Character.isWhitespace(nome.charAt(i))){
+                throw new NomeInvalidoException();
+            }
         }
     }
 
-    public static int contarPalavras(String nome) throws new StringVaziaException;{
-        for( int i=0; i<nome.lenght(); i++){
-            nome.Caracter.isLetter(i);
-        }
+    public static int contarPalavras(String nome) throws StringVaziaException{
+         
+
+            String [] array = nome.split("\\s+");
+            return array.length;
+
+        
     }
     
     public static void main(String[] args) {
@@ -21,10 +32,7 @@ public class validarnome {
         
         System.out.println("Digite o nome do vivente: ");
         s1 = in.next();
-
-        //System.out.println("Digite a segunda palavra: ");
-        //s2 = in.next();
-        
+ 
        try{
         validarNome(s1);
         System.out.println("O nome tem "+contarPalavras(s1)+" palavras" );
